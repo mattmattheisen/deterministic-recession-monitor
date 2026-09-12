@@ -3,13 +3,14 @@ from __future__ import annotations
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
 import pandas as pd
 
 from recession_monitor.alert import alert_decision
 from recession_monitor.config import load_yaml
 from recession_monitor.engine import build_features, classify_curve, overall_state
-from recession_monitor.fetch import fetch_one
+from recession_monitor.fetch import fetch_one, fetch_registry
 from recession_monitor.validation import consolidate_alert_runs, exact_binomial_interval
 
 
@@ -127,6 +128,28 @@ class VintageArchiveTests(unittest.TestCase):
             (vintage / "TEST.csv").write_bytes(b"different")
             with self.assertRaises(RuntimeError):
                 fetch_one("TEST", "unused", "2020-01-01", raw, offline=True, vintage_dir=vintage)
+
+    def test_live_timeout_can_use_labeled_cache_fallback(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            raw = root / "raw"
+            raw.mkdir()
+            (raw / "TEST.csv").write_bytes(b"observation_date,TEST\n2020-01-01,1.0\n")
+            registry = {"base_url": "https://example.invalid", "series": {"TEST": {}}}
+            with patch("recession_monitor.fetch._download", side_effect=TimeoutError("timed out")):
+                data, metadata = fetch_registry(
+                    registry,
+                    start="2020-01-01",
+                    raw_dir=raw,
+                    metadata_path=root / "metadata.json",
+                    workers=1,
+                    download_attempts=1,
+                    download_timeout=1,
+                    allow_cache_fallback=True,
+                )
+            self.assertEqual(float(data["TEST"].iloc[-1]), 1.0)
+            self.assertEqual(metadata["TEST"]["retrieval_status"], "CACHE_FALLBACK")
+            self.assertIn("TimeoutError", metadata["TEST"]["retrieval_error"])
 
 
 class AlertDecisionTests(unittest.TestCase):

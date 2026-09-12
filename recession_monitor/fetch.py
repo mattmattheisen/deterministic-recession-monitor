@@ -45,6 +45,8 @@ def fetch_one(
     raw_dir: Path,
     offline: bool = False,
     vintage_dir: Path | None = None,
+    download_attempts: int = 3,
+    download_timeout: int = 45,
 ) -> tuple[str, pd.Series, dict]:
     raw_dir.mkdir(parents=True, exist_ok=True)
     raw_path = raw_dir / f"{series_id}.csv"
@@ -55,7 +57,11 @@ def fetch_one(
         retrieved_at = datetime.fromtimestamp(raw_path.stat().st_mtime, tz=timezone.utc)
     else:
         query = urlencode({"id": series_id, "cosd": start})
-        payload = _download(f"{base_url}?{query}")
+        payload = _download(
+            f"{base_url}?{query}",
+            attempts=download_attempts,
+            timeout=download_timeout,
+        )
         raw_path.write_bytes(payload)
         retrieved_at = datetime.now(timezone.utc)
     vintage_path = None
@@ -79,6 +85,8 @@ def fetch_one(
         "observation_count": int(series.size),
         "raw_path": str(raw_path),
         "vintage_raw_path": None if vintage_path is None else str(vintage_path),
+        "retrieval_status": "OFFLINE_CACHE" if offline else "LIVE",
+        "retrieval_error": None,
     }
     return series_id, series, meta
 
@@ -91,6 +99,9 @@ def fetch_registry(
     offline: bool = False,
     workers: int = 6,
     vintage_dir: str | Path | None = None,
+    download_attempts: int = 3,
+    download_timeout: int = 45,
+    allow_cache_fallback: bool = False,
 ) -> tuple[dict[str, pd.Series], dict[str, dict]]:
     base_url = registry["base_url"]
     raw_dir = Path(raw_dir)
@@ -100,11 +111,36 @@ def fetch_registry(
     ids = sorted(registry["series"])
     with ThreadPoolExecutor(max_workers=workers) as executor:
         futures = {
-            executor.submit(fetch_one, sid, base_url, start, raw_dir, offline, vintage_dir): sid
+            executor.submit(
+                fetch_one,
+                sid,
+                base_url,
+                start,
+                raw_dir,
+                offline,
+                vintage_dir,
+                download_attempts,
+                download_timeout,
+            ): sid
             for sid in ids
         }
         for future in as_completed(futures):
-            sid, series, meta = future.result()
+            requested_sid = futures[future]
+            try:
+                sid, series, meta = future.result()
+            except Exception as exc:
+                if offline or not allow_cache_fallback:
+                    raise
+                sid, series, meta = fetch_one(
+                    requested_sid,
+                    base_url,
+                    start,
+                    raw_dir,
+                    offline=True,
+                    vintage_dir=vintage_dir,
+                )
+                meta["retrieval_status"] = "CACHE_FALLBACK"
+                meta["retrieval_error"] = f"{type(exc).__name__}: {exc}"
             collected[sid] = series
             metadata[sid] = meta
     metadata_path = Path(metadata_path)

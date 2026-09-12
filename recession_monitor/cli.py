@@ -33,6 +33,10 @@ def run(args: argparse.Namespace) -> int:
             if args.offline or args.no_vintage_copy
             else root / "data" / "vintages" / date.today().isoformat()
         ),
+        workers=args.workers,
+        download_attempts=args.download_attempts,
+        download_timeout=args.download_timeout,
+        allow_cache_fallback=args.allow_cache_fallback,
     )
     as_of = date.fromisoformat(args.as_of) if args.as_of else date.today()
     latest_path = output_dir / "latest.json"
@@ -74,6 +78,14 @@ def build_parser() -> argparse.ArgumentParser:
         "--no-vintage-copy",
         action="store_true",
         help="Skip expanded vintage copies when committed data/raw history is retained by version control",
+    )
+    parser.add_argument("--workers", type=int, default=6, help="Maximum parallel source requests")
+    parser.add_argument("--download-attempts", type=int, default=3, help="Attempts per live source request")
+    parser.add_argument("--download-timeout", type=int, default=45, help="Seconds allowed per live source request")
+    parser.add_argument(
+        "--allow-cache-fallback",
+        action="store_true",
+        help="Use the retained hashed payload after a live request failure; normal freshness rules still apply",
     )
     return parser
 

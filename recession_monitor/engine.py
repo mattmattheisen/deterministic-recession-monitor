@@ -285,6 +285,8 @@ def data_quality(registry: dict, metadata: dict[str, dict], as_of: date) -> dict
             "payload_sha256": meta.get("payload_sha256"),
             "release_date": None,
             "coverage_note": spec.get("coverage_note"),
+            "retrieval_status": meta.get("retrieval_status"),
+            "retrieval_error": meta.get("retrieval_error"),
         }
     return result
 

@@ -45,7 +45,14 @@ jobs:
       - name: Install engine
         run: python -m pip install -e .
       - name: Run live monitor
-        run: python -m recession_monitor.cli --as-of "$(date -u +%F)" --no-vintage-copy
+        run: >-
+          python -m recession_monitor.cli
+          --as-of "$(date -u +%F)"
+          --no-vintage-copy
+          --workers 3
+          --download-attempts 1
+          --download-timeout 20
+          --allow-cache-fallback
       - name: Commit changed evidence and outputs
         shell: bash
         run: |

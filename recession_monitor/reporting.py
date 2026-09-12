@@ -15,6 +15,7 @@ def current_report(snapshot: dict[str, Any]) -> str:
     m = snapshot["metrics"]
     q = snapshot["data_quality"]
     stale = [sid for sid, item in q.items() if item["status"] != "FRESH" and sid != "USREC"]
+    fallbacks = [sid for sid, item in q.items() if item.get("retrieval_status") == "CACHE_FALLBACK"]
     lines = [
         "# Deterministic U.S. Recession Monitor",
         "",
@@ -65,6 +66,8 @@ def current_report(snapshot: dict[str, Any]) -> str:
         lines.append("Stale or missing series: " + ", ".join(f"`{sid}`" for sid in stale) + ".")
     else:
         lines.append("All required live series are within their configured freshness windows.")
+    if fallbacks:
+        lines.append("Live retrieval failed and the retained hashed payload was used for: " + ", ".join(f"`{sid}`" for sid in fallbacks) + ". Freshness rules still apply.")
     lines.extend([
         "",
         "`release_date` remains null unless it is supplied by an authoritative machine-readable source. Raw payloads are retained and SHA-256 hashed.",
@@ -198,8 +201,8 @@ def quality_report(snapshot: dict[str, Any], registry: dict, metadata: dict[str,
         "",
         "## Source coverage and freshness",
         "",
-        "| Series | Layer | Coverage | Last observation | Freshness | Observations |",
-        "|---|---|---|---|---|---:|",
+        "| Series | Layer | Coverage | Last observation | Freshness | Retrieval | Observations |",
+        "|---|---|---|---|---|---|---:|",
     ]
     for sid, spec in registry["series"].items():
         meta = metadata.get(sid, {})
@@ -207,7 +210,7 @@ def quality_report(snapshot: dict[str, Any], registry: dict, metadata: dict[str,
         coverage = f"{meta.get('first_observation', 'n/a')} to {meta.get('last_observation', 'n/a')}"
         lines.append(
             f"| `{sid}` | {spec['layer']} | {coverage} | {quality.get('last_observation', 'n/a')} | "
-            f"{quality.get('status', 'UNKNOWN')} | {meta.get('observation_count', 'n/a')} |"
+            f"{quality.get('status', 'UNKNOWN')} | {meta.get('retrieval_status', 'n/a')} | {meta.get('observation_count', 'n/a')} |"
         )
     lines.extend([
         "",
@@ -220,6 +223,7 @@ def quality_report(snapshot: dict[str, Any], registry: dict, metadata: dict[str,
         "- `BAMLH0A0HYM2` has limited trailing redistribution history; `BAA10Y` is used as the long-history corporate-credit proxy.",
         "- `PCEC96` begins in 2007, so earlier activity breadth relies on the other available core series and CFNAI.",
         "- Historical validation uses revised observations and is not vintage-correct. This is the largest unresolved methodological limitation.",
+        "- A live request failure may use the retained hashed payload only when explicitly enabled. The retrieval is labeled `CACHE_FALLBACK`; observation-age rules still determine freshness and can force `UNKNOWN`.",
         "- Commercial real-estate delinquency is treated as corroboration-only because it is quarterly and lagging; it cannot set or upgrade the credit state.",
         "",
         "## Readiness",

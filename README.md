@@ -32,6 +32,8 @@ python3 -m recession_monitor.cli --as-of 2026-09-12 --offline
 
 Scheduled runs and human-authored pushes execute the live monitor. Bot-authored output commits do not rerun the live job, preventing commit loops. The workflow uses `--no-vintage-copy` to avoid duplicate working-tree payloads. Each fetched `data/raw` file and its SHA-256 receipt are committed, making Git history the point-in-time archive.
 
+The scheduled workflow permits a transparent cache fallback after a live request timeout. The affected series is labeled `CACHE_FALLBACK`; its retained payload hash remains auditable, and ordinary observation-age rules can still mark it stale and force `UNKNOWN`. A network timeout therefore cannot silently convert stale evidence into a normal reading.
+
 Run tests:
 
 ```bash
