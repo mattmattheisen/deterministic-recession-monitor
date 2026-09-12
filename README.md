@@ -30,7 +30,7 @@ Reproduce the result from retained source files without any network requests:
 python3 -m recession_monitor.cli --as-of 2026-09-12 --offline
 ```
 
-The scheduled GitHub workflow uses `--no-vintage-copy` to avoid duplicate working-tree payloads. Each fetched `data/raw` file and its SHA-256 receipt are committed, making Git history the point-in-time archive.
+Scheduled runs and human-authored pushes execute the live monitor. Bot-authored output commits do not rerun the live job, preventing commit loops. The workflow uses `--no-vintage-copy` to avoid duplicate working-tree payloads. Each fetched `data/raw` file and its SHA-256 receipt are committed, making Git history the point-in-time archive.
 
 Run tests:
 
