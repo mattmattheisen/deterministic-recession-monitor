@@ -1,0 +1,379 @@
+{
+  "alert_episode_analysis": {
+    "cooldown_months": 6,
+    "definition": "Orange/Red runs separated by 6 or fewer non-alert months are one episode. An observed episode is positive if it overlaps a recession or is followed by a recession start within 18 months.",
+    "episodes": [
+      {
+        "calendar_months": 12,
+        "context": "MATCHED_RECESSION",
+        "end": "1970-12-31",
+        "episode": 1,
+        "matched_recession_starts": [
+          "1970-01-31"
+        ],
+        "orange_or_red_months": 10,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 2,
+        "start": "1970-01-31",
+        "start_layers": {
+          "activity": "SEVERE",
+          "credit": "UNKNOWN",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 17,
+        "context": "MATCHED_RECESSION",
+        "end": "1975-05-31",
+        "episode": 2,
+        "matched_recession_starts": [
+          "1973-12-31"
+        ],
+        "orange_or_red_months": 15,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 3,
+        "start": "1974-01-31",
+        "start_layers": {
+          "activity": "ELEVATED",
+          "credit": "UNKNOWN",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 45,
+        "context": "MATCHED_RECESSION",
+        "end": "1982-12-31",
+        "episode": 3,
+        "matched_recession_starts": [
+          "1980-02-29",
+          "1981-08-31"
+        ],
+        "orange_or_red_months": 29,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 5,
+        "start": "1979-04-30",
+        "start_layers": {
+          "activity": "SEVERE",
+          "credit": "UNKNOWN",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 3,
+        "context": "UNMATCHED_STRESS",
+        "end": "1986-06-30",
+        "episode": 4,
+        "matched_recession_starts": [],
+        "orange_or_red_months": 2,
+        "outcome": "FALSE_POSITIVE",
+        "peak_state": "ORANGE",
+        "raw_runs_merged": 2,
+        "start": "1986-04-30",
+        "start_layers": {
+          "activity": "NORMAL",
+          "credit": "ELEVATED",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 25,
+        "context": "MATCHED_RECESSION",
+        "end": "1991-04-30",
+        "episode": 5,
+        "matched_recession_starts": [
+          "1990-08-31"
+        ],
+        "orange_or_red_months": 18,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 3,
+        "start": "1989-04-30",
+        "start_layers": {
+          "activity": "ELEVATED",
+          "credit": "SEVERE",
+          "labor": "NORMAL"
+        }
+      },
+      {
+        "calendar_months": 2,
+        "context": "POST_RECESSION_AFTERSHOCK",
+        "end": "1992-01-31",
+        "episode": 6,
+        "matched_recession_starts": [],
+        "orange_or_red_months": 2,
+        "outcome": "FALSE_POSITIVE",
+        "peak_state": "ORANGE",
+        "raw_runs_merged": 1,
+        "start": "1991-12-31",
+        "start_layers": {
+          "activity": "ELEVATED",
+          "credit": "NORMAL",
+          "labor": "SEVERE"
+        }
+      },
+      {
+        "calendar_months": 38,
+        "context": "MATCHED_RECESSION",
+        "end": "2003-09-30",
+        "episode": 7,
+        "matched_recession_starts": [
+          "2001-04-30"
+        ],
+        "orange_or_red_months": 37,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 2,
+        "start": "2000-08-31",
+        "start_layers": {
+          "activity": "NORMAL",
+          "credit": "ELEVATED",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 38,
+        "context": "MATCHED_RECESSION",
+        "end": "2010-09-30",
+        "episode": 8,
+        "matched_recession_starts": [
+          "2008-01-31"
+        ],
+        "orange_or_red_months": 34,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 4,
+        "start": "2007-08-31",
+        "start_layers": {
+          "activity": "NORMAL",
+          "credit": "SEVERE",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 15,
+        "context": "MATCHED_RECESSION",
+        "end": "2021-02-28",
+        "episode": 9,
+        "matched_recession_starts": [
+          "2020-03-31"
+        ],
+        "orange_or_red_months": 10,
+        "outcome": "TRUE_POSITIVE",
+        "peak_state": "RED",
+        "raw_runs_merged": 3,
+        "start": "2019-12-31",
+        "start_layers": {
+          "activity": "ELEVATED",
+          "credit": "NORMAL",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 1,
+        "context": "UNMATCHED_STRESS",
+        "end": "2024-03-31",
+        "episode": 10,
+        "matched_recession_starts": [],
+        "orange_or_red_months": 1,
+        "outcome": "FALSE_POSITIVE",
+        "peak_state": "ORANGE",
+        "raw_runs_merged": 1,
+        "start": "2024-03-31",
+        "start_layers": {
+          "activity": "ELEVATED",
+          "credit": "NORMAL",
+          "labor": "ELEVATED"
+        }
+      },
+      {
+        "calendar_months": 8,
+        "context": "OUTCOME_NOT_YET_OBSERVABLE",
+        "end": "2026-01-31",
+        "episode": 11,
+        "matched_recession_starts": [],
+        "orange_or_red_months": 5,
+        "outcome": "RIGHT_CENSORED",
+        "peak_state": "ORANGE",
+        "raw_runs_merged": 2,
+        "start": "2025-06-30",
+        "start_layers": {
+          "activity": "ELEVATED",
+          "credit": "NORMAL",
+          "labor": "ELEVATED"
+        }
+      }
+    ],
+    "false_positive_episodes": 3,
+    "forecast_window_months": 18,
+    "observed_episode_precision": 0.7,
+    "observed_episode_precision_interval": {
+      "confidence": 0.95,
+      "lower": 0.3475,
+      "method": "Clopper-Pearson exact",
+      "successes": 7,
+      "trials": 10,
+      "upper": 0.9333
+    },
+    "right_censored_episodes": 1,
+    "true_positive_episodes": 7
+  },
+  "coverage_end": "2026-09-30",
+  "coverage_start": "1967-04-30",
+  "material_caveats": [
+    "Historical values are the latest revised FRED observations, not the values known on each historical date.",
+    "Observation dates are used as monthly anchors; exact historical release lags are not reconstructed.",
+    "Monthly forecast metrics use overlapping 12-month targets and serially dependent observations; their apparent sample size overstates statistical independence.",
+    "Event detection and alert-episode precision are separate tests with different denominators and must not be combined into a hit rate.",
+    "Clopper-Pearson intervals quantify small-sample binomial uncertainty but do not remove dependence among business cycles.",
+    "The high-yield OAS feed has limited redistributed history and is therefore supplemented by BAA10Y for long-history credit validation.",
+    "Commercial real-estate delinquency is a lagging quarterly corroborator and cannot set or upgrade the credit state in this ruleset.",
+    "Ruleset 0.1.1 changes only the CRE role and validation definitions; thresholds were not optimized against the revised results.",
+    "A decision-grade validation requires ALFRED vintages or a sufficiently long prospectively frozen source archive."
+  ],
+  "monthly_horizon_classification": {
+    "confusion_matrix": {
+      "false_negative_months": 75,
+      "false_positive_months": 54,
+      "true_negative_months": 468,
+      "true_positive_months": 105
+    },
+    "evaluation_end": "2025-09-30",
+    "months_evaluated": 702,
+    "positive_classification": "overall state is ORANGE or RED",
+    "precision": 0.6604,
+    "recall": 0.5833,
+    "specificity": 0.8966,
+    "target_definition": "NBER recession is active or a recession begins within the next 12 months",
+    "target_negative_months": 522,
+    "target_positive_months": 180,
+    "uncertainty_note": "No naive binomial interval is reported because adjacent monthly observations are serially dependent.",
+    "unit": "month"
+  },
+  "months_tested": 714,
+  "recession_event_detection": {
+    "definition": "Detected when Orange/Red occurs from as early as 18 months before the recession start through 6 months after it; the window cannot cross the previous recession end.",
+    "episodes": [
+      {
+        "detected": true,
+        "first_orange_or_red": "1970-01-31",
+        "lead_lag_months": 0,
+        "recession_start": "1970-01-31",
+        "window_end": "1970-07-31",
+        "window_start": "1968-07-31"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "1974-01-31",
+        "lead_lag_months": -1,
+        "recession_start": "1973-12-31",
+        "window_end": "1974-06-30",
+        "window_start": "1972-06-30"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "1979-04-30",
+        "lead_lag_months": 10,
+        "recession_start": "1980-02-29",
+        "window_end": "1980-08-29",
+        "window_start": "1978-08-29"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "1980-08-31",
+        "lead_lag_months": 12,
+        "recession_start": "1981-08-31",
+        "window_end": "1982-02-28",
+        "window_start": "1980-08-31"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "1989-04-30",
+        "lead_lag_months": 16,
+        "recession_start": "1990-08-31",
+        "window_end": "1991-02-28",
+        "window_start": "1989-02-28"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "2000-08-31",
+        "lead_lag_months": 8,
+        "recession_start": "2001-04-30",
+        "window_end": "2001-10-30",
+        "window_start": "1999-10-30"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "2007-08-31",
+        "lead_lag_months": 5,
+        "recession_start": "2008-01-31",
+        "window_end": "2008-07-31",
+        "window_start": "2006-07-31"
+      },
+      {
+        "detected": true,
+        "first_orange_or_red": "2019-12-31",
+        "lead_lag_months": 3,
+        "recession_start": "2020-03-31",
+        "window_end": "2020-09-30",
+        "window_start": "2018-09-30"
+      }
+    ],
+    "episodes_detected": 8,
+    "episodes_eligible": 8,
+    "event_detection_rate": 1.0,
+    "event_detection_rate_interval": {
+      "confidence": 0.95,
+      "lower": 0.6306,
+      "method": "Clopper-Pearson exact",
+      "successes": 8,
+      "trials": 8,
+      "upper": 1.0
+    },
+    "unit": "NBER recession episode"
+  },
+  "ruleset_version": "0.1.1-provisional",
+  "state_months": {
+    "GREEN": 440,
+    "ORANGE": 91,
+    "RED": 72,
+    "YELLOW": 111
+  },
+  "transition_diagnostics": {
+    "interpretation": "Transitions are state-machine diagnostics, not independent forecast events.",
+    "raw_orange_or_red_transition_count": 28,
+    "raw_orange_or_red_transition_dates": [
+      "1970-01-31",
+      "1970-09-30",
+      "1974-01-31",
+      "1974-06-30",
+      "1974-08-31",
+      "1979-04-30",
+      "1979-08-31",
+      "1980-02-29",
+      "1981-02-28",
+      "1981-09-30",
+      "1986-04-30",
+      "1986-06-30",
+      "1989-04-30",
+      "1989-07-31",
+      "1990-08-31",
+      "1991-12-31",
+      "2000-08-31",
+      "2000-10-31",
+      "2007-08-31",
+      "2007-12-31",
+      "2010-05-31",
+      "2010-08-31",
+      "2019-12-31",
+      "2020-03-31",
+      "2021-02-28",
+      "2024-03-31",
+      "2025-06-30",
+      "2025-10-31"
+    ]
+  },
+  "validation_type": "Current-vintage pseudo-real-time backtest"
+}

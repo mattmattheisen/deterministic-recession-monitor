@@ -1,0 +1,150 @@
+registry_version: "0.1.0"
+provider: "FRED CSV"
+base_url: "https://fred.stlouisfed.org/graph/fredgraph.csv"
+series:
+  SAHMREALTIME:
+    label: "Real-time Sahm Rule recession indicator"
+    layer: "labor"
+    frequency: "monthly"
+    max_age_days: 75
+    origin: "Claudia Sahm / FRED"
+  UNRATE:
+    label: "Civilian unemployment rate"
+    layer: "labor"
+    frequency: "monthly"
+    max_age_days: 75
+    origin: "U.S. Bureau of Labor Statistics"
+  PAYEMS:
+    label: "All employees, total nonfarm payrolls"
+    layer: "labor"
+    frequency: "monthly"
+    max_age_days: 75
+    origin: "U.S. Bureau of Labor Statistics"
+  IC4WSA:
+    label: "Four-week moving average of initial claims"
+    layer: "labor"
+    frequency: "weekly"
+    max_age_days: 14
+    origin: "U.S. Department of Labor"
+  CCSA:
+    label: "Continued claims"
+    layer: "labor"
+    frequency: "weekly"
+    max_age_days: 21
+    origin: "U.S. Department of Labor"
+  W875RX1:
+    label: "Real personal income excluding current transfer receipts"
+    layer: "activity"
+    frequency: "monthly"
+    max_age_days: 85
+    origin: "U.S. Bureau of Economic Analysis"
+  PCEC96:
+    label: "Real personal consumption expenditures"
+    layer: "activity"
+    frequency: "monthly"
+    max_age_days: 85
+    origin: "U.S. Bureau of Economic Analysis"
+  INDPRO:
+    label: "Industrial production: total index"
+    layer: "activity"
+    frequency: "monthly"
+    max_age_days: 75
+    origin: "Board of Governors of the Federal Reserve System"
+  CMRMTSPL:
+    label: "Real manufacturing and trade industries sales"
+    layer: "activity"
+    frequency: "monthly"
+    max_age_days: 120
+    origin: "U.S. Census Bureau"
+  CFNAIMA3:
+    label: "Chicago Fed National Activity Index, 3-month average"
+    layer: "activity"
+    frequency: "monthly"
+    max_age_days: 85
+    origin: "Federal Reserve Bank of Chicago"
+  PERMIT:
+    label: "New privately-owned housing units authorized"
+    layer: "forward"
+    frequency: "monthly"
+    max_age_days: 85
+    origin: "U.S. Census Bureau"
+  HOUST:
+    label: "Housing starts"
+    layer: "forward"
+    frequency: "monthly"
+    max_age_days: 85
+    origin: "U.S. Census Bureau"
+  DGS10:
+    label: "10-year Treasury constant maturity rate"
+    layer: "curve"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "Board of Governors of the Federal Reserve System"
+  DGS3MO:
+    label: "3-month Treasury constant maturity rate"
+    layer: "curve"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "Board of Governors of the Federal Reserve System"
+  T10Y3M:
+    label: "10-year Treasury minus 3-month Treasury"
+    layer: "curve"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "Federal Reserve Bank of St. Louis"
+  BAA10Y:
+    label: "Moody's Baa corporate yield relative to 10-year Treasury"
+    layer: "credit"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "Moody's / Federal Reserve Bank of St. Louis"
+  BAMLH0A0HYM2:
+    label: "ICE BofA U.S. high-yield option-adjusted spread"
+    layer: "credit"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "ICE Data Indices / FRED"
+    coverage_note: "FRED redistribution currently exposes a limited trailing history; not relied upon for long-history validation."
+  NFCI:
+    label: "Chicago Fed National Financial Conditions Index"
+    layer: "credit"
+    frequency: "weekly"
+    max_age_days: 14
+    origin: "Federal Reserve Bank of Chicago"
+  STLFSI4:
+    label: "St. Louis Fed Financial Stress Index"
+    layer: "credit"
+    frequency: "weekly"
+    max_age_days: 14
+    origin: "Federal Reserve Bank of St. Louis"
+  DRCRELEXFACBS:
+    label: "Delinquency rate on commercial real-estate loans excluding farmland"
+    layer: "credit"
+    frequency: "quarterly"
+    max_age_days: 190
+    origin: "Board of Governors of the Federal Reserve System"
+  DFII10:
+    label: "10-year Treasury inflation-indexed security, constant maturity"
+    layer: "shock"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "Board of Governors of the Federal Reserve System"
+  T10YIE:
+    label: "10-year breakeven inflation rate"
+    layer: "shock"
+    frequency: "daily"
+    max_age_days: 7
+    origin: "Federal Reserve Bank of St. Louis"
+  DCOILWTICO:
+    label: "West Texas Intermediate spot price"
+    layer: "shock"
+    frequency: "daily"
+    max_age_days: 10
+    origin: "U.S. Energy Information Administration"
+  USREC:
+    label: "NBER recession indicator"
+    layer: "validation"
+    frequency: "monthly"
+    max_age_days: 90
+    origin: "National Bureau of Economic Research / FRED"
+

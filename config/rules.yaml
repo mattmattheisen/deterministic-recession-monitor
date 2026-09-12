@@ -1,0 +1,60 @@
+ruleset_version: "0.1.1-provisional"
+principle: "Same source snapshot plus same ruleset version produces the same state."
+states:
+  UNKNOWN: -1
+  NORMAL: 0
+  ELEVATED: 1
+  SEVERE: 2
+labor:
+  sahm_elevated: 0.30
+  sahm_severe: 0.50
+  payroll_3m_average_elevated_thousands: 50.0
+  payroll_3m_average_severe_thousands: 0.0
+  claims_ratio_elevated: 0.15
+  claims_ratio_severe: 0.20
+  claims_persistence_weeks: 4
+activity:
+  lookback_months: 3
+  elevated_contracting_series: 2
+  severe_contracting_series: 3
+  minimum_available_series: 3
+  cfnai_elevated: -0.35
+  cfnai_severe: -0.70
+credit:
+  baa_spread_elevated_percent: 2.50
+  baa_spread_severe_percent: 3.50
+  baa_20d_change_elevated_percent: 0.50
+  baa_20d_change_severe_percent: 1.00
+  high_yield_oas_elevated_percent: 4.50
+  high_yield_oas_severe_percent: 6.00
+  high_yield_20d_change_elevated_percent: 1.00
+  high_yield_20d_change_severe_percent: 2.00
+  nfci_elevated: 0.00
+  nfci_severe: 0.50
+  stlfsi_elevated: 0.00
+  stlfsi_severe: 1.00
+  cre_delinquency_elevated: 3.00
+  cre_delinquency_severe: 5.00
+  cre_delinquency_role: "corroboration_only"
+forward:
+  housing_yoy_elevated: -0.10
+  housing_yoy_severe: -0.20
+  curve_inversion_persistence_months: 3
+curve:
+  meaningful_20d_spread_change_percent: 0.15
+shock:
+  oil_3m_elevated: 0.25
+  oil_3m_severe: 0.50
+  real_yield_20d_elevated_percent: 0.50
+  real_yield_20d_severe_percent: 1.00
+  breakeven_20d_elevated_percent: 0.25
+  breakeven_20d_severe_percent: 0.50
+overall:
+  yellow_minimum_elevated_layers: 2
+  red_requires_labor_and_activity: true
+validation:
+  prediction_horizon_months: 12
+  episode_lookback_months: 18
+  episode_detection_lag_months: 6
+  alert_episode_forecast_months: 18
+  alert_episode_cooldown_months: 6
