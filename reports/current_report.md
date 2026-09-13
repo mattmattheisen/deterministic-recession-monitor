@@ -44,6 +44,7 @@ The curve classification is contextual. It cannot independently elevate the over
 ## Data quality
 
 All required live series are within their configured freshness windows.
+Live retrieval failed and the retained hashed payload was used for: `SAHMREALTIME`, `UNRATE`, `PAYEMS`, `IC4WSA`, `CCSA`, `W875RX1`, `PCEC96`, `INDPRO`, `CMRMTSPL`, `CFNAIMA3`, `PERMIT`, `HOUST`, `DGS10`, `DGS3MO`, `T10Y3M`, `BAA10Y`, `BAMLH0A0HYM2`, `NFCI`, `STLFSI4`, `DRCRELEXFACBS`, `DFII10`, `T10YIE`, `DCOILWTICO`, `USREC`. Freshness rules still apply.
 
 `release_date` remains null unless it is supplied by an authoritative machine-readable source. Raw payloads are retained and SHA-256 hashed.
 
