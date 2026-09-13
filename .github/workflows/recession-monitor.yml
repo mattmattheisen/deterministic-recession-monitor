@@ -33,7 +33,9 @@ jobs:
     if: >-
       github.event_name == 'schedule' ||
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'push' && github.actor != 'github-actions[bot]')
+      (github.event_name == 'push' &&
+       github.actor != 'github-actions[bot]' &&
+       !contains(github.event.head_commit.message, '[skip live]'))
     needs: test
     runs-on: ubuntu-latest
     steps:
