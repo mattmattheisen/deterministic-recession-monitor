@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "deterministic-recession-monitor"
-version = "0.1.1"
+version = "0.1.2"
 description = "Fixed-source, versioned, deterministic U.S. recession state engine"
 requires-python = ">=3.10"
 dependencies = ["pandas>=2.0", "numpy>=1.24", "PyYAML>=6.0"]

@@ -10,7 +10,7 @@ import pandas as pd
 from recession_monitor.alert import alert_decision
 from recession_monitor.config import load_yaml
 from recession_monitor.engine import build_features, classify_curve, overall_state
-from recession_monitor.fetch import fetch_one, fetch_registry
+from recession_monitor.fetch import NonRetryableSourceError, _download, fetch_one, fetch_registry
 from recession_monitor.validation import consolidate_alert_runs, exact_binomial_interval
 
 
@@ -115,6 +115,84 @@ class ValidationDefinitionTests(unittest.TestCase):
 
 
 class VintageArchiveTests(unittest.TestCase):
+    def test_authenticated_api_json_is_retained_and_parsed(self):
+        payload = (
+            b'{"observations":['
+            b'{"date":"2020-01-01","value":"1.0"},'
+            b'{"date":"2020-02-01","value":"."},'
+            b'{"date":"2020-03-01","value":"2.5"}'
+            b']}'
+        )
+        with TemporaryDirectory() as temporary:
+            raw = Path(temporary) / "raw"
+            with patch("recession_monitor.fetch._download", return_value=payload) as download:
+                _, series, metadata = fetch_one(
+                    "TEST",
+                    "https://api.stlouisfed.org/fred/series/observations",
+                    "2020-01-01",
+                    raw,
+                    api_key="private-test-key",
+                )
+            self.assertEqual(series.tolist(), [1.0, 2.5])
+            self.assertEqual((raw / "TEST.json").read_bytes(), payload)
+            self.assertEqual(metadata["payload_format"], "fred_api_json")
+            self.assertEqual(metadata["retrieval_status"], "LIVE")
+            called_url = download.call_args.args[0]
+            self.assertIn("api_key=private-test-key", called_url)
+            self.assertNotIn("private-test-key", metadata["source_endpoint"])
+
+    def test_live_registry_requires_api_key_even_when_cache_exists(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            raw = root / "raw"
+            raw.mkdir()
+            (raw / "TEST.csv").write_bytes(b"observation_date,TEST\n2020-01-01,1.0\n")
+            registry = {"base_url": "https://example.invalid", "series": {"TEST": {}}}
+            with self.assertRaisesRegex(RuntimeError, "FRED_API_KEY"):
+                fetch_registry(
+                    registry,
+                    start="2020-01-01",
+                    raw_dir=raw,
+                    metadata_path=root / "metadata.json",
+                    allow_cache_fallback=True,
+                )
+
+    def test_rejected_api_request_cannot_fall_back_to_cache(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            raw = root / "raw"
+            raw.mkdir()
+            (raw / "TEST.csv").write_bytes(b"observation_date,TEST\n2020-01-01,1.0\n")
+            registry = {"base_url": "https://example.invalid", "series": {"TEST": {}}}
+            with patch(
+                "recession_monitor.fetch._download",
+                side_effect=NonRetryableSourceError("request rejected"),
+            ):
+                with self.assertRaisesRegex(NonRetryableSourceError, "rejected"):
+                    fetch_registry(
+                        registry,
+                        start="2020-01-01",
+                        raw_dir=raw,
+                        metadata_path=root / "metadata.json",
+                        workers=1,
+                        allow_cache_fallback=True,
+                        api_key="invalid-test-key",
+                    )
+
+    def test_download_error_redacts_api_key(self):
+        secret = "private-test-key"
+        with patch("recession_monitor.fetch.urlopen", side_effect=RuntimeError(f"failure for {secret}")):
+            with self.assertRaises(RuntimeError) as raised:
+                _download(
+                    f"https://example.invalid?api_key={secret}",
+                    attempts=1,
+                    timeout=1,
+                    display_url="https://example.invalid",
+                    secret_values=(secret,),
+                )
+        self.assertNotIn(secret, str(raised.exception))
+        self.assertIn("[REDACTED]", str(raised.exception))
+
     def test_vintage_payload_is_immutable(self):
         with TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -146,6 +224,7 @@ class VintageArchiveTests(unittest.TestCase):
                     download_attempts=1,
                     download_timeout=1,
                     allow_cache_fallback=True,
+                    api_key="private-test-key",
                 )
             self.assertEqual(float(data["TEST"].iloc[-1]), 1.0)
             self.assertEqual(metadata["TEST"]["retrieval_status"], "CACHE_FALLBACK")

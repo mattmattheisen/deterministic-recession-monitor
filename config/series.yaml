@@ -1,6 +1,6 @@
-registry_version: "0.1.0"
-provider: "FRED CSV"
-base_url: "https://fred.stlouisfed.org/graph/fredgraph.csv"
+registry_version: "0.1.1"
+provider: "FRED API v1"
+base_url: "https://api.stlouisfed.org/fred/series/observations"
 series:
   SAHMREALTIME:
     label: "Real-time Sahm Rule recession indicator"
@@ -147,4 +147,3 @@ series:
     frequency: "monthly"
     max_age_days: 90
     origin: "National Bureau of Economic Research / FRED"
-

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from datetime import date
 from pathlib import Path
 
@@ -37,6 +38,7 @@ def run(args: argparse.Namespace) -> int:
         download_attempts=args.download_attempts,
         download_timeout=args.download_timeout,
         allow_cache_fallback=args.allow_cache_fallback,
+        api_key=os.environ.get("FRED_API_KEY"),
     )
     as_of = date.fromisoformat(args.as_of) if args.as_of else date.today()
     latest_path = output_dir / "latest.json"

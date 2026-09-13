@@ -8,7 +8,7 @@ The model classifies economic evidence; it does not forecast with an LLM and doe
 
 The pipeline is:
 
-1. Fetch an allowlisted set of FRED CSV series.
+1. Fetch an allowlisted set of series through the authenticated FRED observations API.
 2. Retain the exact raw payload and compute its SHA-256 hash.
    Online runs also create an immutable date-stamped copy under `data/vintages/`; a conflicting payload for the same capture date fails closed.
 3. Transform observations with fixed, documented formulas.
@@ -21,8 +21,10 @@ The pipeline is:
 From the project directory:
 
 ```bash
-python3 -m recession_monitor.cli --as-of 2026-09-12
+FRED_API_KEY="your-key" python3 -m recession_monitor.cli --as-of 2026-09-12
 ```
+
+Live retrieval requires a `FRED_API_KEY` environment variable. In GitHub Actions, store it as a repository secret named `FRED_API_KEY`; the workflow exposes it only to the live-monitor process. The key is never written to raw payloads, metadata, reports, or command-line arguments.
 
 Reproduce the result from retained source files without any network requests:
 
