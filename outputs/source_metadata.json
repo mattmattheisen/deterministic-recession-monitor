@@ -9,22 +9,22 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.427561+00:00",
+    "retrieved_at": "2026-09-14T19:36:45.729686+00:00",
     "series_id": "BAA10Y",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
   },
   "BAMLH0A0HYM2": {
-    "first_observation": "2023-09-12",
-    "last_observation": "2026-09-10",
-    "observation_count": 787,
+    "first_observation": "2023-09-15",
+    "last_observation": "2026-09-11",
+    "observation_count": 785,
     "payload_format": "fred_api_json",
-    "payload_sha256": "6e79b9a4ca6a2680f6a7d01420ebbc338d2a1bddccdae2302ebffe52dba3a698",
+    "payload_sha256": "075b239904803ff255a4acba4a564c86a7bb25e8d7fe8145f01a5c368b7dc6a0",
     "raw_path": "/home/runner/work/deterministic-recession-monitor/deterministic-recession-monitor/data/raw/BAMLH0A0HYM2.json",
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.265358+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.441276+00:00",
     "series_id": "BAMLH0A0HYM2",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -39,7 +39,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.297622+00:00",
+    "retrieved_at": "2026-09-14T19:36:45.759504+00:00",
     "series_id": "CCSA",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -54,7 +54,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.488402+00:00",
+    "retrieved_at": "2026-09-14T19:36:45.957283+00:00",
     "series_id": "CFNAIMA3",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -69,7 +69,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.503763+00:00",
+    "retrieved_at": "2026-09-14T19:36:45.963020+00:00",
     "series_id": "CMRMTSPL",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -84,7 +84,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.824771+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.180304+00:00",
     "series_id": "DCOILWTICO",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -99,7 +99,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.809057+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.574683+00:00",
     "series_id": "DFII10",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -114,7 +114,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:52.862337+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.477749+00:00",
     "series_id": "DGS10",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -129,7 +129,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.112498+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.658399+00:00",
     "series_id": "DGS3MO",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -144,7 +144,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.044879+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.758571+00:00",
     "series_id": "DRCRELEXFACBS",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -159,7 +159,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.063723+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.904513+00:00",
     "series_id": "HOUST",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -174,7 +174,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.299597+00:00",
+    "retrieved_at": "2026-09-14T19:36:46.934170+00:00",
     "series_id": "IC4WSA",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -189,7 +189,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.293634+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.165949+00:00",
     "series_id": "INDPRO",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -204,7 +204,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.391422+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.112192+00:00",
     "series_id": "NFCI",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -219,7 +219,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.607932+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.514969+00:00",
     "series_id": "PAYEMS",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -234,7 +234,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.489171+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.289056+00:00",
     "series_id": "PCEC96",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -249,7 +249,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.584965+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.347735+00:00",
     "series_id": "PERMIT",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -264,7 +264,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.686836+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.538922+00:00",
     "series_id": "SAHMREALTIME",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -279,7 +279,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.806653+00:00",
+    "retrieved_at": "2026-09-14T19:36:47.777774+00:00",
     "series_id": "STLFSI4",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -294,7 +294,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.887776+00:00",
+    "retrieved_at": "2026-09-14T19:36:48.133585+00:00",
     "series_id": "T10Y3M",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -309,7 +309,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:53.912958+00:00",
+    "retrieved_at": "2026-09-14T19:36:48.436717+00:00",
     "series_id": "T10YIE",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -324,7 +324,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:54.012596+00:00",
+    "retrieved_at": "2026-09-14T19:36:48.036251+00:00",
     "series_id": "UNRATE",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -339,7 +339,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:54.117500+00:00",
+    "retrieved_at": "2026-09-14T19:36:48.273724+00:00",
     "series_id": "USREC",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
@@ -354,7 +354,7 @@
     "release_date": null,
     "retrieval_error": null,
     "retrieval_status": "LIVE",
-    "retrieved_at": "2026-09-13T00:34:54.121818+00:00",
+    "retrieved_at": "2026-09-14T19:36:48.432178+00:00",
     "series_id": "W875RX1",
     "source_endpoint": "https://api.stlouisfed.org/fred/series/observations",
     "vintage_raw_path": null
