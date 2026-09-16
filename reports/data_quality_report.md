@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-09-15  
+**As of:** 2026-09-16  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
@@ -19,17 +19,17 @@
 | `CFNAIMA3` | activity | 1967-05-01 to 2026-07-01 | 2026-07-01 | FRESH | LIVE | 711 |
 | `PERMIT` | forward | 1960-01-01 to 2026-07-01 | 2026-07-01 | FRESH | LIVE | 799 |
 | `HOUST` | forward | 1959-01-01 to 2026-07-01 | 2026-07-01 | FRESH | LIVE | 811 |
-| `DGS10` | curve | 1962-01-02 to 2026-09-11 | 2026-09-11 | FRESH | LIVE | 16159 |
-| `DGS3MO` | curve | 1981-09-01 to 2026-09-11 | 2026-09-11 | FRESH | LIVE | 11257 |
-| `T10Y3M` | curve | 1982-01-04 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 11177 |
-| `BAA10Y` | credit | 1986-01-02 to 2026-09-11 | 2026-09-11 | FRESH | LIVE | 10174 |
-| `BAMLH0A0HYM2` | credit | 2023-09-18 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 785 |
-| `NFCI` | credit | 1971-01-08 to 2026-09-04 | 2026-09-04 | FRESH | LIVE | 2905 |
+| `DGS10` | curve | 1962-01-02 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 16160 |
+| `DGS3MO` | curve | 1981-09-01 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 11258 |
+| `T10Y3M` | curve | 1982-01-04 to 2026-09-15 | 2026-09-15 | FRESH | LIVE | 11178 |
+| `BAA10Y` | credit | 1986-01-02 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 10175 |
+| `BAMLH0A0HYM2` | credit | 2023-09-18 to 2026-09-15 | 2026-09-15 | FRESH | LIVE | 786 |
+| `NFCI` | credit | 1971-01-08 to 2026-09-11 | 2026-09-11 | FRESH | LIVE | 2906 |
 | `STLFSI4` | credit | 1993-12-31 to 2026-09-04 | 2026-09-04 | FRESH | LIVE | 1706 |
 | `DRCRELEXFACBS` | credit | 1991-01-01 to 2026-04-01 | 2026-04-01 | FRESH | LIVE | 142 |
-| `DFII10` | shock | 2003-01-02 to 2026-09-11 | 2026-09-11 | FRESH | LIVE | 5928 |
-| `T10YIE` | shock | 2003-01-02 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 5929 |
-| `DCOILWTICO` | shock | 1986-01-02 to 2026-09-09 | 2026-09-09 | FRESH | LIVE | 10241 |
+| `DFII10` | shock | 2003-01-02 to 2026-09-14 | 2026-09-14 | FRESH | LIVE | 5929 |
+| `T10YIE` | shock | 2003-01-02 to 2026-09-15 | 2026-09-15 | FRESH | LIVE | 5930 |
+| `DCOILWTICO` | shock | 1986-01-02 to 2026-09-15 | 2026-09-15 | FRESH | LIVE | 9502 |
 | `USREC` | validation | 1959-01-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 812 |
 
 ## Material findings
