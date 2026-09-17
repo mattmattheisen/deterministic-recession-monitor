@@ -336,10 +336,10 @@
   },
   "ruleset_version": "0.1.1-provisional",
   "state_months": {
-    "GREEN": 440,
+    "GREEN": 441,
     "ORANGE": 91,
     "RED": 72,
-    "YELLOW": 111
+    "YELLOW": 110
   },
   "transition_diagnostics": {
     "interpretation": "Transitions are state-machine diagnostics, not independent forecast events.",
