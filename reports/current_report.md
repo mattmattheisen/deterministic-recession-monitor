@@ -1,6 +1,6 @@
 # Deterministic U.S. Recession Monitor
 
-**As of:** 2026-09-18  
+**As of:** 2026-09-21  
 **Ruleset:** `0.1.1-provisional`  
 **Overall state:** **GREEN**
 **Alert required:** **NO** (NO_MATERIAL_ESCALATION)
@@ -23,8 +23,8 @@
 | Three-month average payroll change | 61.0 thousand |
 | Initial-claims rise from 52-week low | 2.1% |
 | Contracting core activity series | 0 of 4 |
-| CFNAI-MA3 | -0.04 |
-| Baa-Treasury spread | 1.43% |
+| CFNAI-MA3 | 0.01 |
+| Baa-Treasury spread | 1.44% |
 | High-yield OAS | 2.70% |
 | NFCI | -0.560 |
 | Permits, year over year | -3.5% |
@@ -34,10 +34,10 @@
 ## Yield-curve decomposition
 
 - Pattern: **STABLE**
-- 10y-3m spread: 0.82%
-- 20-trading-day spread change: 0.03 percentage points
-- 20-trading-day 10-year change: 0.36 percentage points
-- 20-trading-day 3-month change: 0.28 percentage points
+- 10y-3m spread: 0.87%
+- 20-trading-day spread change: 0.05 percentage points
+- 20-trading-day 10-year change: 0.25 percentage points
+- 20-trading-day 3-month change: 0.25 percentage points
 
 The curve classification is contextual. It cannot independently elevate the overall state to Orange or Red. No positive spread level, including +1.0%, is itself a trigger.
 
