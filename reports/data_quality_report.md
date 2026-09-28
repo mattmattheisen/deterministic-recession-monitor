@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-09-25  
+**As of:** 2026-09-28  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
@@ -19,16 +19,16 @@
 | `CFNAIMA3` | activity | 1967-05-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 712 |
 | `PERMIT` | forward | 1960-01-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 800 |
 | `HOUST` | forward | 1959-01-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 812 |
-| `DGS10` | curve | 1962-01-02 to 2026-09-23 | 2026-09-23 | FRESH | LIVE | 16167 |
-| `DGS3MO` | curve | 1981-09-01 to 2026-09-23 | 2026-09-23 | FRESH | LIVE | 11265 |
-| `T10Y3M` | curve | 1982-01-04 to 2026-09-24 | 2026-09-24 | FRESH | LIVE | 11185 |
-| `BAA10Y` | credit | 1986-01-02 to 2026-09-23 | 2026-09-23 | FRESH | LIVE | 10182 |
-| `BAMLH0A0HYM2` | credit | 2023-09-26 to 2026-09-24 | 2026-09-24 | FRESH | LIVE | 787 |
+| `DGS10` | curve | 1962-01-02 to 2026-09-25 | 2026-09-25 | FRESH | LIVE | 16169 |
+| `DGS3MO` | curve | 1981-09-01 to 2026-09-25 | 2026-09-25 | FRESH | LIVE | 11267 |
+| `T10Y3M` | curve | 1982-01-04 to 2026-09-25 | 2026-09-25 | FRESH | LIVE | 11186 |
+| `BAA10Y` | credit | 1986-01-02 to 2026-09-24 | 2026-09-24 | FRESH | LIVE | 10183 |
+| `BAMLH0A0HYM2` | credit | 2023-09-29 to 2026-09-25 | 2026-09-25 | FRESH | LIVE | 785 |
 | `NFCI` | credit | 1971-01-08 to 2026-09-18 | 2026-09-18 | FRESH | LIVE | 2907 |
 | `STLFSI4` | credit | 1993-12-31 to 2026-09-18 | 2026-09-18 | FRESH | LIVE | 1708 |
 | `DRCRELEXFACBS` | credit | 1991-01-01 to 2026-04-01 | 2026-04-01 | FRESH | LIVE | 142 |
-| `DFII10` | shock | 2003-01-02 to 2026-09-23 | 2026-09-23 | FRESH | LIVE | 5936 |
-| `T10YIE` | shock | 2003-01-02 to 2026-09-24 | 2026-09-24 | FRESH | LIVE | 5937 |
+| `DFII10` | shock | 2003-01-02 to 2026-09-25 | 2026-09-25 | FRESH | LIVE | 5938 |
+| `T10YIE` | shock | 2003-01-02 to 2026-09-25 | 2026-09-25 | FRESH | LIVE | 5938 |
 | `DCOILWTICO` | shock | 1986-01-02 to 2026-09-22 | 2026-09-22 | FRESH | LIVE | 9507 |
 | `USREC` | validation | 1959-01-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 812 |
 
