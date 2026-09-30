@@ -189,12 +189,12 @@
         }
       },
       {
-        "calendar_months": 8,
+        "calendar_months": 6,
         "context": "OUTCOME_NOT_YET_OBSERVABLE",
-        "end": "2026-01-31",
+        "end": "2025-11-30",
         "episode": 11,
         "matched_recession_starts": [],
-        "orange_or_red_months": 5,
+        "orange_or_red_months": 3,
         "outcome": "RIGHT_CENSORED",
         "peak_state": "ORANGE",
         "raw_runs_merged": 2,
@@ -336,10 +336,10 @@
   },
   "ruleset_version": "0.1.1-provisional",
   "state_months": {
-    "GREEN": 441,
-    "ORANGE": 91,
-    "RED": 72,
-    "YELLOW": 110
+    "GREEN": 444,
+    "ORANGE": 90,
+    "RED": 71,
+    "YELLOW": 109
   },
   "transition_diagnostics": {
     "interpretation": "Transitions are state-machine diagnostics, not independent forecast events.",

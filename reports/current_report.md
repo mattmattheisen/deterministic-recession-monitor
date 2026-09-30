@@ -1,6 +1,6 @@
 # Deterministic U.S. Recession Monitor
 
-**As of:** 2026-09-29  
+**As of:** 2026-09-30  
 **Ruleset:** `0.1.1-provisional`  
 **Overall state:** **GREEN**
 **Alert required:** **NO** (NO_MATERIAL_ESCALATION)
@@ -22,28 +22,28 @@
 | Sahm Rule | -0.07 pp |
 | Three-month average payroll change | 61.0 thousand |
 | Initial-claims rise from 52-week low | 1.6% |
-| Contracting core activity series | 0 of 2 |
+| Contracting core activity series | 0 of 4 |
 | CFNAI-MA3 | 0.01 |
 | Baa-Treasury spread | 1.46% |
-| High-yield OAS | 2.93% |
-| NFCI | -0.555 |
+| High-yield OAS | 3.02% |
+| NFCI | -0.548 |
 | Permits, year over year | -2.8% |
 | Housing starts, year over year | -3.3% |
-| Oil, three-month change | 36.6% |
+| Oil, three-month change | 36.3% |
 
 ## Yield-curve decomposition
 
-- Pattern: **STABLE**
-- 10y-3m spread: 0.96%
-- 20-trading-day spread change: 0.13 percentage points
-- 20-trading-day 10-year change: 0.44 percentage points
-- 20-trading-day 3-month change: 0.34 percentage points
+- Pattern: **BEAR_STEEPENER**
+- 10y-3m spread: 1.01%
+- 20-trading-day spread change: 0.17 percentage points
+- 20-trading-day 10-year change: 0.49 percentage points
+- 20-trading-day 3-month change: 0.37 percentage points
 
 The curve classification is contextual. It cannot independently elevate the overall state to Orange or Red. No positive spread level, including +1.0%, is itself a trigger.
 
 ## Data quality
 
-Stale or missing series: `W875RX1`, `PCEC96`.
+All required live series are within their configured freshness windows.
 
 `release_date` remains null unless it is supplied by an authoritative machine-readable source. Raw payloads are retained and SHA-256 hashed.
 

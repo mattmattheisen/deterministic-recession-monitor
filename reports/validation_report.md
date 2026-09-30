@@ -75,7 +75,7 @@ Orange/Red runs separated by 6 or fewer non-alert months are one episode. An obs
 | 8 | 2007-08-31 | 2010-09-30 | RED | 34 | 4 | TRUE_POSITIVE | MATCHED_RECESSION | 2008-01-31 |
 | 9 | 2019-12-31 | 2021-02-28 | RED | 10 | 3 | TRUE_POSITIVE | MATCHED_RECESSION | 2020-03-31 |
 | 10 | 2024-03-31 | 2024-03-31 | ORANGE | 1 | 1 | FALSE_POSITIVE | UNMATCHED_STRESS | None |
-| 11 | 2025-06-30 | 2026-01-31 | ORANGE | 5 | 2 | RIGHT_CENSORED | OUTCOME_NOT_YET_OBSERVABLE | None |
+| 11 | 2025-06-30 | 2025-11-30 | ORANGE | 3 | 2 | RIGHT_CENSORED | OUTCOME_NOT_YET_OBSERVABLE | None |
 
 ## Transition diagnostics
 
@@ -87,10 +87,10 @@ There were 28 raw entries into Orange/Red. Transitions are state-machine diagnos
 
 | State | Months |
 |---|---:|
-| GREEN | 441 |
-| ORANGE | 91 |
-| RED | 72 |
-| YELLOW | 110 |
+| GREEN | 444 |
+| ORANGE | 90 |
+| RED | 71 |
+| YELLOW | 109 |
 
 ## Material caveats
 
