@@ -220,7 +220,7 @@
     "right_censored_episodes": 1,
     "true_positive_episodes": 7
   },
-  "coverage_end": "2026-09-30",
+  "coverage_end": "2026-10-31",
   "coverage_start": "1967-04-30",
   "material_caveats": [
     "Historical values are the latest revised FRED observations, not the values known on each historical date.",
@@ -236,23 +236,23 @@
   "monthly_horizon_classification": {
     "confusion_matrix": {
       "false_negative_months": 75,
-      "false_positive_months": 54,
+      "false_positive_months": 55,
       "true_negative_months": 468,
       "true_positive_months": 105
     },
-    "evaluation_end": "2025-09-30",
-    "months_evaluated": 702,
+    "evaluation_end": "2025-10-31",
+    "months_evaluated": 703,
     "positive_classification": "overall state is ORANGE or RED",
-    "precision": 0.6604,
+    "precision": 0.6562,
     "recall": 0.5833,
-    "specificity": 0.8966,
+    "specificity": 0.8948,
     "target_definition": "NBER recession is active or a recession begins within the next 12 months",
-    "target_negative_months": 522,
+    "target_negative_months": 523,
     "target_positive_months": 180,
     "uncertainty_note": "No naive binomial interval is reported because adjacent monthly observations are serially dependent.",
     "unit": "month"
   },
-  "months_tested": 714,
+  "months_tested": 715,
   "recession_event_detection": {
     "definition": "Detected when Orange/Red occurs from as early as 18 months before the recession start through 6 months after it; the window cannot cross the previous recession end.",
     "episodes": [
@@ -336,7 +336,7 @@
   },
   "ruleset_version": "0.1.1-provisional",
   "state_months": {
-    "GREEN": 444,
+    "GREEN": 445,
     "ORANGE": 90,
     "RED": 71,
     "YELLOW": 109
