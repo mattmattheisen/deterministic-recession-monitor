@@ -1,6 +1,6 @@
 # Deterministic U.S. Recession Monitor
 
-**As of:** 2026-10-02  
+**As of:** 2026-10-05  
 **Ruleset:** `0.1.1-provisional`  
 **Overall state:** **GREEN**
 **Alert required:** **NO** (NO_MATERIAL_ESCALATION)
@@ -13,7 +13,7 @@
 | Activity | NORMAL |
 | Credit | NORMAL |
 | Forward | NORMAL |
-| Shock | NORMAL |
+| Shock | ELEVATED |
 
 ## Selected current metrics
 
@@ -25,7 +25,7 @@
 | Contracting core activity series | 1 of 4 |
 | CFNAI-MA3 | 0.01 |
 | Baa-Treasury spread | 1.47% |
-| High-yield OAS | 3.12% |
+| High-yield OAS | 3.10% |
 | NFCI | -0.548 |
 | Permits, year over year | -1.1% |
 | Housing starts, year over year | 0.2% |
@@ -34,8 +34,8 @@
 ## Yield-curve decomposition
 
 - Pattern: **BEAR_STEEPENER**
-- 10y-3m spread: 1.07%
-- 20-trading-day spread change: 0.20 percentage points
+- 10y-3m spread: 1.09%
+- 20-trading-day spread change: 0.22 percentage points
 - 20-trading-day 10-year change: 0.50 percentage points
 - 20-trading-day 3-month change: 0.28 percentage points
 
