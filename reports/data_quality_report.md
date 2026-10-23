@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-10-22  
+**As of:** 2026-10-23  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
@@ -19,16 +19,16 @@
 | `CFNAIMA3` | activity | 1967-05-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 712 |
 | `PERMIT` | forward | 1960-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 801 |
 | `HOUST` | forward | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
-| `DGS10` | curve | 1962-01-02 to 2026-10-20 | 2026-10-20 | FRESH | LIVE | 16185 |
-| `DGS3MO` | curve | 1981-09-01 to 2026-10-20 | 2026-10-20 | FRESH | LIVE | 11283 |
-| `T10Y3M` | curve | 1982-01-04 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 11203 |
-| `BAA10Y` | credit | 1986-01-02 to 2026-10-20 | 2026-10-20 | FRESH | LIVE | 10200 |
-| `BAMLH0A0HYM2` | credit | 2023-10-23 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 786 |
+| `DGS10` | curve | 1962-01-02 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 16186 |
+| `DGS3MO` | curve | 1981-09-01 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 11284 |
+| `T10Y3M` | curve | 1982-01-04 to 2026-10-22 | 2026-10-22 | FRESH | LIVE | 11204 |
+| `BAA10Y` | credit | 1986-01-02 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 10201 |
+| `BAMLH0A0HYM2` | credit | 2023-10-24 to 2026-10-22 | 2026-10-22 | FRESH | LIVE | 786 |
 | `NFCI` | credit | 1971-01-08 to 2026-10-16 | 2026-10-16 | FRESH | LIVE | 2911 |
 | `STLFSI4` | credit | 1993-12-31 to 2026-10-16 | 2026-10-16 | FRESH | LIVE | 1712 |
 | `DRCRELEXFACBS` | credit | 1991-01-01 to 2026-04-01 | 2026-04-01 | STALE_OR_MISSING | LIVE | 142 |
-| `DFII10` | shock | 2003-01-02 to 2026-10-20 | 2026-10-20 | FRESH | LIVE | 5954 |
-| `T10YIE` | shock | 2003-01-02 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 5955 |
+| `DFII10` | shock | 2003-01-02 to 2026-10-21 | 2026-10-21 | FRESH | LIVE | 5955 |
+| `T10YIE` | shock | 2003-01-02 to 2026-10-22 | 2026-10-22 | FRESH | LIVE | 5956 |
 | `DCOILWTICO` | shock | 1986-01-02 to 2026-10-20 | 2026-10-20 | FRESH | LIVE | 9527 |
 | `USREC` | validation | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
 
