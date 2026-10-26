@@ -1,0 +1,412 @@
+{
+  "alert": {
+    "changes": [
+      "data_quality:W875RX1:STALE_OR_MISSING"
+    ],
+    "previous_as_of": "2026-10-23",
+    "previous_overall_state": "GREEN",
+    "reason": "MATERIAL_ESCALATION",
+    "required": true
+  },
+  "as_of": "2026-10-26",
+  "curve": {
+    "change_20d_10y_percent": -0.22,
+    "change_20d_3m_percent": -0.02,
+    "change_20d_spread_percent": -0.16,
+    "observation_date": "2026-10-23",
+    "pattern": "FLATTENING",
+    "spread_percent": 0.78
+  },
+  "data_quality": {
+    "BAA10Y": {
+      "age_days": 4,
+      "coverage_note": null,
+      "last_observation": "2026-10-22",
+      "max_age_days": 7,
+      "payload_sha256": "f9a33b55caf0f9a870692d63621fd190e32b7f6c3d2179d9191b131ff33682e4",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "BAMLH0A0HYM2": {
+      "age_days": 3,
+      "coverage_note": "FRED redistribution currently exposes a limited trailing history; not relied upon for long-history validation.",
+      "last_observation": "2026-10-23",
+      "max_age_days": 7,
+      "payload_sha256": "f9f40cbde30c953ec04faa7a0f1468c8b464edb08f6990f9063ecf638ff5a1c1",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "CCSA": {
+      "age_days": 16,
+      "coverage_note": null,
+      "last_observation": "2026-10-10",
+      "max_age_days": 21,
+      "payload_sha256": "02b306cc7eef8335c64fffd99085f2d01cfcb39be733d02f85e164a8677b128d",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "CFNAIMA3": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 85,
+      "payload_sha256": "f1b108d49e39a1c33c0b25b4ea4f99db3f0f8739a3657345cf145f6f09cc238b",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "CMRMTSPL": {
+      "age_days": 117,
+      "coverage_note": null,
+      "last_observation": "2026-07-01",
+      "max_age_days": 120,
+      "payload_sha256": "bc60ea982a9c46c8a373eda6ed8916ddf4fd151faf9147ae4d298e32265b6c78",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "DCOILWTICO": {
+      "age_days": 6,
+      "coverage_note": null,
+      "last_observation": "2026-10-20",
+      "max_age_days": 10,
+      "payload_sha256": "e5cf4848ccde1d990046ac4f84c91b76c1ec270a4c28fb5ee4a6ca11d2c03046",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "DFII10": {
+      "age_days": 4,
+      "coverage_note": null,
+      "last_observation": "2026-10-22",
+      "max_age_days": 7,
+      "payload_sha256": "7950060ec0736a6701f97b624c9f887431fdd9ccd58d18e25850d93b821d4f7c",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "DGS10": {
+      "age_days": 4,
+      "coverage_note": null,
+      "last_observation": "2026-10-22",
+      "max_age_days": 7,
+      "payload_sha256": "5f8de2dbd33015f9bed9398be18676a85e5f14013441395c78fa3e4573098a8a",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "DGS3MO": {
+      "age_days": 4,
+      "coverage_note": null,
+      "last_observation": "2026-10-22",
+      "max_age_days": 7,
+      "payload_sha256": "08599bb4e2f891689a2114b0243b0a2cc35770f38ac8e26ccf268ef4a2c80259",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "DRCRELEXFACBS": {
+      "age_days": 208,
+      "coverage_note": null,
+      "last_observation": "2026-04-01",
+      "max_age_days": 190,
+      "payload_sha256": "0e5a3a4af040ebcb64409e22002bbd3071a6c0b3d350430d4b6b00d7c6606659",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "STALE_OR_MISSING"
+    },
+    "HOUST": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 85,
+      "payload_sha256": "fbea459e3020ef1dfbcc96bf1fb5c793c69d9b20681da609951248dbefeb4855",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "IC4WSA": {
+      "age_days": 9,
+      "coverage_note": null,
+      "last_observation": "2026-10-17",
+      "max_age_days": 14,
+      "payload_sha256": "9114be467836902ee5570acdd266f93aa504e60f12a49231c42c01be270cab83",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "INDPRO": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 75,
+      "payload_sha256": "d236512c62aeffa492de262221eb1b6837ce2e17fda648d65c3601464fdf6bcf",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "NFCI": {
+      "age_days": 10,
+      "coverage_note": null,
+      "last_observation": "2026-10-16",
+      "max_age_days": 14,
+      "payload_sha256": "0cc122cc87fd0d1bb97a6f5b335ed56d7f497ba1b6f1bfe38d9746c0c4e38c76",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "PAYEMS": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 75,
+      "payload_sha256": "bcc87ea4bea8d2ce2d77d878d86591dae0f0813b742a19024bac887db5f4617f",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "PCEC96": {
+      "age_days": 86,
+      "coverage_note": null,
+      "last_observation": "2026-08-01",
+      "max_age_days": 85,
+      "payload_sha256": "ffb88a3fc287a3a3a24ba9fb9fb8a8d3be64476d8f0bfe5e3744aac738163f4e",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "STALE_OR_MISSING"
+    },
+    "PERMIT": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 85,
+      "payload_sha256": "e049a02b677e6a0fe18b8d52a1925e8292b98be47b79c97e49a62b6e90960670",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "SAHMREALTIME": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 75,
+      "payload_sha256": "170a955cd187844974912a9b0042c93b4d1fb09f8766ffb5a6750eb002d11b41",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "STLFSI4": {
+      "age_days": 10,
+      "coverage_note": null,
+      "last_observation": "2026-10-16",
+      "max_age_days": 14,
+      "payload_sha256": "a0a999a05b581e112827231e5be40f1935d9f55751780c745b17327bcbf995b7",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "T10Y3M": {
+      "age_days": 3,
+      "coverage_note": null,
+      "last_observation": "2026-10-23",
+      "max_age_days": 7,
+      "payload_sha256": "c0dc1ef62d446d760e23d417f7a9608534a528d90dc5b343b1aaf5a1fa7b2d1d",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "T10YIE": {
+      "age_days": 3,
+      "coverage_note": null,
+      "last_observation": "2026-10-23",
+      "max_age_days": 7,
+      "payload_sha256": "2dde7b89b0749bde9f5255b31fc67736cf569aae4efcda97491fc7b4fc9106f8",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "UNRATE": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 75,
+      "payload_sha256": "5a2fd670107be20f3fec0f314f8082b98b27aaf71b04583c79888ed231cab528",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "USREC": {
+      "age_days": 55,
+      "coverage_note": null,
+      "last_observation": "2026-09-01",
+      "max_age_days": 90,
+      "payload_sha256": "d79f57ee34e7b4927a261260793d0c78fb2bf88b9c9573c5a306fea34255c0d0",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "FRESH"
+    },
+    "W875RX1": {
+      "age_days": 86,
+      "coverage_note": null,
+      "last_observation": "2026-08-01",
+      "max_age_days": 85,
+      "payload_sha256": "77c85525f7a12f49746bf4d4035d51eb0bb4c49d470da19025f421b1e00bff8f",
+      "release_date": null,
+      "retrieval_error": null,
+      "retrieval_status": "LIVE",
+      "status": "STALE_OR_MISSING"
+    }
+  },
+  "determinism": "Same raw payloads and ruleset version produce the same output.",
+  "layers": {
+    "activity": "NORMAL",
+    "credit": "NORMAL",
+    "forward": "NORMAL",
+    "labor": "NORMAL",
+    "shock": "ELEVATED"
+  },
+  "metrics": {
+    "activity_available_count": 2.0,
+    "activity_contracting_count": 0.0,
+    "baa_20d_change": 0.07,
+    "baa_spread": 1.46,
+    "breakeven_20d_change": -0.03,
+    "cfnai_ma3": 0.03,
+    "claims_ratio": 0.0,
+    "cre_corroborates_credit": 0.0,
+    "cre_delinquency": null,
+    "cre_delinquency_elevated_flag": 0.0,
+    "cre_delinquency_severe_flag": 0.0,
+    "credit_primary_elevated": 0.0,
+    "credit_primary_severe": 0.0,
+    "housing_starts_yoy": -0.040848,
+    "hy_20d_change": 0.67,
+    "hy_oas": 3.4,
+    "nfci": -0.496,
+    "oil_3m_change": 0.252205,
+    "payroll_3m_average_k": 54.0,
+    "permits_yoy": -0.012694,
+    "real_yield_20d_change": -0.12,
+    "sahm": 0.0,
+    "stlfsi": -0.6328,
+    "unemployment_rate": 4.2,
+    "unemployment_rise_12m": 0.1
+  },
+  "overall_rank": 0,
+  "overall_state": "GREEN",
+  "registry_version": "0.1.1",
+  "release_date_policy": "release_date remains null unless supplied by an authoritative machine-readable source.",
+  "ruleset_version": "0.1.1-provisional",
+  "series_latest": {
+    "BAA10Y": {
+      "observation_date": "2026-10-22",
+      "value": 1.46
+    },
+    "BAMLH0A0HYM2": {
+      "observation_date": "2026-10-23",
+      "value": 3.38
+    },
+    "CCSA": {
+      "observation_date": "2026-10-10",
+      "value": 1728000.0
+    },
+    "CFNAIMA3": {
+      "observation_date": "2026-09-01",
+      "value": 0.03
+    },
+    "CMRMTSPL": {
+      "observation_date": "2026-07-01",
+      "value": 1598922.0
+    },
+    "DCOILWTICO": {
+      "observation_date": "2026-10-20",
+      "value": 107.89
+    },
+    "DFII10": {
+      "observation_date": "2026-10-22",
+      "value": 2.64
+    },
+    "DGS10": {
+      "observation_date": "2026-10-22",
+      "value": 4.96
+    },
+    "DGS3MO": {
+      "observation_date": "2026-10-22",
+      "value": 4.22
+    },
+    "HOUST": {
+      "observation_date": "2026-09-01",
+      "value": 1221.0
+    },
+    "IC4WSA": {
+      "observation_date": "2026-10-17",
+      "value": 197750.0
+    },
+    "INDPRO": {
+      "observation_date": "2026-09-01",
+      "value": 103.9506
+    },
+    "NFCI": {
+      "observation_date": "2026-10-16",
+      "value": -0.496
+    },
+    "PAYEMS": {
+      "observation_date": "2026-09-01",
+      "value": 159044.0
+    },
+    "PERMIT": {
+      "observation_date": "2026-09-01",
+      "value": 1400.0
+    },
+    "SAHMREALTIME": {
+      "observation_date": "2026-09-01",
+      "value": 0.0
+    },
+    "STLFSI4": {
+      "observation_date": "2026-10-16",
+      "value": -0.6328
+    },
+    "T10Y3M": {
+      "observation_date": "2026-10-23",
+      "value": 0.78
+    },
+    "T10YIE": {
+      "observation_date": "2026-10-23",
+      "value": 2.34
+    },
+    "UNRATE": {
+      "observation_date": "2026-09-01",
+      "value": 4.2
+    },
+    "USREC": {
+      "observation_date": "2026-09-01",
+      "value": 0.0
+    }
+  }
+}
