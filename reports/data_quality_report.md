@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-10-28  
+**As of:** 2026-10-29  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
@@ -10,25 +10,25 @@
 | `SAHMREALTIME` | labor | 1959-12-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 801 |
 | `UNRATE` | labor | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 812 |
 | `PAYEMS` | labor | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
-| `IC4WSA` | labor | 1967-01-28 to 2026-10-17 | 2026-10-17 | FRESH | LIVE | 3117 |
-| `CCSA` | labor | 1967-01-07 to 2026-10-10 | 2026-10-10 | FRESH | LIVE | 3119 |
-| `W875RX1` | activity | 1959-01-01 to 2026-08-01 | 2026-08-01 | STALE_OR_MISSING | LIVE | 812 |
-| `PCEC96` | activity | 2007-01-01 to 2026-08-01 | 2026-08-01 | STALE_OR_MISSING | LIVE | 236 |
+| `IC4WSA` | labor | 1967-01-28 to 2026-10-24 | 2026-10-24 | FRESH | LIVE | 3118 |
+| `CCSA` | labor | 1967-01-07 to 2026-10-17 | 2026-10-17 | FRESH | LIVE | 3120 |
+| `W875RX1` | activity | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
+| `PCEC96` | activity | 2007-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 237 |
 | `INDPRO` | activity | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
-| `CMRMTSPL` | activity | 1967-01-01 to 2026-07-01 | 2026-07-01 | FRESH | LIVE | 715 |
+| `CMRMTSPL` | activity | 1967-01-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 716 |
 | `CFNAIMA3` | activity | 1967-05-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 713 |
 | `PERMIT` | forward | 1960-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 801 |
 | `HOUST` | forward | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
-| `DGS10` | curve | 1962-01-02 to 2026-10-26 | 2026-10-26 | FRESH | LIVE | 16189 |
-| `DGS3MO` | curve | 1981-09-01 to 2026-10-26 | 2026-10-26 | FRESH | LIVE | 11287 |
-| `T10Y3M` | curve | 1982-01-04 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 11207 |
+| `DGS10` | curve | 1962-01-02 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 16190 |
+| `DGS3MO` | curve | 1981-09-01 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 11288 |
+| `T10Y3M` | curve | 1982-01-04 to 2026-10-28 | 2026-10-28 | FRESH | LIVE | 11208 |
 | `BAA10Y` | credit | 1986-01-02 to 2026-10-26 | 2026-10-26 | FRESH | LIVE | 10204 |
-| `BAMLH0A0HYM2` | credit | 2023-10-30 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 785 |
+| `BAMLH0A0HYM2` | credit | 2023-10-30 to 2026-10-28 | 2026-10-28 | FRESH | LIVE | 786 |
 | `NFCI` | credit | 1971-01-08 to 2026-10-23 | 2026-10-23 | FRESH | LIVE | 2912 |
 | `STLFSI4` | credit | 1993-12-31 to 2026-10-23 | 2026-10-23 | FRESH | LIVE | 1713 |
 | `DRCRELEXFACBS` | credit | 1991-01-01 to 2026-04-01 | 2026-04-01 | STALE_OR_MISSING | LIVE | 142 |
-| `DFII10` | shock | 2003-01-02 to 2026-10-26 | 2026-10-26 | FRESH | LIVE | 5958 |
-| `T10YIE` | shock | 2003-01-02 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 5959 |
+| `DFII10` | shock | 2003-01-02 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 5959 |
+| `T10YIE` | shock | 2003-01-02 to 2026-10-28 | 2026-10-28 | FRESH | LIVE | 5960 |
 | `DCOILWTICO` | shock | 1986-01-02 to 2026-10-27 | 2026-10-27 | FRESH | LIVE | 9532 |
 | `USREC` | validation | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
 
