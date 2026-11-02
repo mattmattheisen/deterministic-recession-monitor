@@ -2,8 +2,8 @@
 
 **Ruleset:** `0.1.1-provisional`  
 **Validation type:** Current-vintage pseudo-real-time backtest  
-**Coverage:** 1967-04-30 through 2026-10-31 (715 months)
-**Fully observed monthly prediction window:** through 2025-10-31 (703 months)
+**Coverage:** 1967-04-30 through 2026-11-30 (716 months)
+**Fully observed monthly prediction window:** through 2025-11-30 (704 months)
 
 ## What is being measured
 
@@ -22,14 +22,14 @@ NBER recession is active or a recession begins within the next 12 months.
 | Actual target / Engine state | Orange or Red | Green or Yellow | Total |
 |---|---:|---:|---:|
 | Target positive | 105 | 75 | 180 |
-| Target negative | 55 | 468 | 523 |
-| Total | 160 | 543 | 703 |
+| Target negative | 56 | 468 | 524 |
+| Total | 161 | 543 | 704 |
 
 | Metric | Result | Denominator |
 |---|---:|---:|
-| Monthly precision | 65.6% | 160 Orange/Red months |
+| Monthly precision | 65.2% | 161 Orange/Red months |
 | Monthly recall | 58.3% | 180 target-positive months |
-| Monthly specificity | 89.5% | 523 target-negative months |
+| Monthly specificity | 89.3% | 524 target-negative months |
 
 No naive binomial interval is reported because adjacent monthly observations are serially dependent.
 
@@ -87,7 +87,7 @@ There were 28 raw entries into Orange/Red. Transitions are state-machine diagnos
 
 | State | Months |
 |---|---:|
-| GREEN | 445 |
+| GREEN | 446 |
 | ORANGE | 90 |
 | RED | 71 |
 | YELLOW | 109 |
