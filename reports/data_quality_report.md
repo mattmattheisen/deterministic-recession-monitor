@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-11-09  
+**As of:** 2026-11-10  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
@@ -23,7 +23,7 @@
 | `DGS3MO` | curve | 1981-09-01 to 2026-11-06 | 2026-11-06 | FRESH | LIVE | 11296 |
 | `T10Y3M` | curve | 1982-01-04 to 2026-11-09 | 2026-11-09 | FRESH | LIVE | 11216 |
 | `BAA10Y` | credit | 1986-01-02 to 2026-11-06 | 2026-11-06 | FRESH | LIVE | 10213 |
-| `BAMLH0A0HYM2` | credit | 2023-11-10 to 2026-11-06 | 2026-11-06 | FRESH | LIVE | 784 |
+| `BAMLH0A0HYM2` | credit | 2023-11-13 to 2026-11-09 | 2026-11-09 | FRESH | LIVE | 784 |
 | `NFCI` | credit | 1971-01-08 to 2026-10-30 | 2026-10-30 | FRESH | LIVE | 2913 |
 | `STLFSI4` | credit | 1993-12-31 to 2026-10-30 | 2026-10-30 | FRESH | LIVE | 1714 |
 | `DRCRELEXFACBS` | credit | 1991-01-01 to 2026-04-01 | 2026-04-01 | STALE_OR_MISSING | LIVE | 142 |
