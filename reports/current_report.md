@@ -1,6 +1,6 @@
 # Deterministic U.S. Recession Monitor
 
-**As of:** 2026-11-11  
+**As of:** 2026-11-12  
 **Ruleset:** `0.1.1-provisional`  
 **Overall state:** **GREEN**
 **Alert required:** **NO** (NO_MATERIAL_ESCALATION)
@@ -26,7 +26,7 @@
 | CFNAI-MA3 | 0.03 |
 | Baa-Treasury spread | 1.51% |
 | High-yield OAS | 3.34% |
-| NFCI | -0.459 |
+| NFCI | -0.462 |
 | Permits, year over year | -1.1% |
 | Housing starts, year over year | -7.4% |
 | Oil, three-month change | 14.5% |
@@ -36,8 +36,8 @@
 - Pattern: **FLATTENING**
 - 10y-3m spread: 0.68%
 - 20-trading-day spread change: -0.27 percentage points
-- 20-trading-day 10-year change: -0.33 percentage points
-- 20-trading-day 3-month change: -0.02 percentage points
+- 20-trading-day 10-year change: -0.23 percentage points
+- 20-trading-day 3-month change: 0.04 percentage points
 
 The curve classification is contextual. It cannot independently elevate the overall state to Orange or Red. No positive spread level, including +1.0%, is itself a trigger.
 
