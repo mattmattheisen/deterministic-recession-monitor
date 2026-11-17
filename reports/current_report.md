@@ -1,9 +1,9 @@
 # Deterministic U.S. Recession Monitor
 
-**As of:** 2026-11-16  
+**As of:** 2026-11-17  
 **Ruleset:** `0.1.1-provisional`  
 **Overall state:** **GREEN**
-**Alert required:** **YES** (MATERIAL_ESCALATION)
+**Alert required:** **NO** (NO_MATERIAL_ESCALATION)
 
 ## Layer states
 
@@ -22,10 +22,10 @@
 | Sahm Rule | 0.00 pp |
 | Three-month average payroll change | 75.0 thousand |
 | Initial-claims rise from 52-week low | 0.0% |
-| Contracting core activity series | 1 of 3 |
+| Contracting core activity series | 1 of 4 |
 | CFNAI-MA3 | 0.03 |
-| Baa-Treasury spread | 1.47% |
-| High-yield OAS | 3.23% |
+| Baa-Treasury spread | 1.50% |
+| High-yield OAS | 3.34% |
 | NFCI | -0.462 |
 | Permits, year over year | -1.1% |
 | Housing starts, year over year | -7.4% |
@@ -34,16 +34,16 @@
 ## Yield-curve decomposition
 
 - Pattern: **STABLE**
-- 10y-3m spread: 0.78%
-- 20-trading-day spread change: -0.05 percentage points
-- 20-trading-day 10-year change: 0.06 percentage points
-- 20-trading-day 3-month change: 0.06 percentage points
+- 10y-3m spread: 0.77%
+- 20-trading-day spread change: -0.11 percentage points
+- 20-trading-day 10-year change: -0.03 percentage points
+- 20-trading-day 3-month change: 0.07 percentage points
 
 The curve classification is contextual. It cannot independently elevate the overall state to Orange or Red. No positive spread level, including +1.0%, is itself a trigger.
 
 ## Data quality
 
-Stale or missing series: `INDPRO`, `DRCRELEXFACBS`.
+Stale or missing series: `DRCRELEXFACBS`.
 
 `release_date` remains null unless it is supplied by an authoritative machine-readable source. Raw payloads are retained and SHA-256 hashed.
 
