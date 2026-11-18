@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-11-17  
+**As of:** 2026-11-18  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
@@ -17,19 +17,19 @@
 | `INDPRO` | activity | 1959-01-01 to 2026-10-01 | 2026-10-01 | FRESH | LIVE | 814 |
 | `CMRMTSPL` | activity | 1967-01-01 to 2026-08-01 | 2026-08-01 | FRESH | LIVE | 716 |
 | `CFNAIMA3` | activity | 1967-05-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 713 |
-| `PERMIT` | forward | 1960-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 801 |
-| `HOUST` | forward | 1959-01-01 to 2026-09-01 | 2026-09-01 | FRESH | LIVE | 813 |
-| `DGS10` | curve | 1962-01-02 to 2026-11-16 | 2026-11-16 | FRESH | LIVE | 16203 |
-| `DGS3MO` | curve | 1981-09-01 to 2026-11-16 | 2026-11-16 | FRESH | LIVE | 11301 |
-| `T10Y3M` | curve | 1982-01-04 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 11221 |
-| `BAA10Y` | credit | 1986-01-02 to 2026-11-16 | 2026-11-16 | FRESH | LIVE | 10218 |
-| `BAMLH0A0HYM2` | credit | 2023-11-20 to 2026-11-16 | 2026-11-16 | FRESH | LIVE | 784 |
-| `NFCI` | credit | 1971-01-08 to 2026-11-06 | 2026-11-06 | FRESH | LIVE | 2914 |
-| `STLFSI4` | credit | 1993-12-31 to 2026-11-06 | 2026-11-06 | FRESH | LIVE | 1715 |
+| `PERMIT` | forward | 1960-01-01 to 2026-10-01 | 2026-10-01 | FRESH | LIVE | 802 |
+| `HOUST` | forward | 1959-01-01 to 2026-10-01 | 2026-10-01 | FRESH | LIVE | 814 |
+| `DGS10` | curve | 1962-01-02 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 16204 |
+| `DGS3MO` | curve | 1981-09-01 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 11302 |
+| `T10Y3M` | curve | 1982-01-04 to 2026-11-18 | 2026-11-18 | FRESH | LIVE | 11222 |
+| `BAA10Y` | credit | 1986-01-02 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 10219 |
+| `BAMLH0A0HYM2` | credit | 2023-11-20 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 785 |
+| `NFCI` | credit | 1971-01-08 to 2026-11-13 | 2026-11-13 | FRESH | LIVE | 2915 |
+| `STLFSI4` | credit | 1993-12-31 to 2026-11-13 | 2026-11-13 | FRESH | LIVE | 1716 |
 | `DRCRELEXFACBS` | credit | 1991-01-01 to 2026-04-01 | 2026-04-01 | STALE_OR_MISSING | LIVE | 142 |
-| `DFII10` | shock | 2003-01-02 to 2026-11-16 | 2026-11-16 | FRESH | LIVE | 5972 |
-| `T10YIE` | shock | 2003-01-02 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 5973 |
-| `DCOILWTICO` | shock | 1986-01-02 to 2026-11-11 | 2026-11-11 | FRESH | LIVE | 9543 |
+| `DFII10` | shock | 2003-01-02 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 5973 |
+| `T10YIE` | shock | 2003-01-02 to 2026-11-18 | 2026-11-18 | FRESH | LIVE | 5974 |
+| `DCOILWTICO` | shock | 1986-01-02 to 2026-11-17 | 2026-11-17 | FRESH | LIVE | 9547 |
 | `USREC` | validation | 1959-01-01 to 2026-10-01 | 2026-10-01 | FRESH | LIVE | 814 |
 
 ## Material findings
