@@ -58,10 +58,10 @@ Orange/Red runs separated by 6 or fewer non-alert months are one episode. An obs
 | Result | Count |
 |---|---:|
 | True-positive episodes | 7 |
-| False-positive episodes | 3 |
+| False-positive episodes | 2 |
 | Right-censored episodes | 1 |
-| Observed episode precision | 70.0% |
-| Exact 95% interval | 34.8% to 93.3% |
+| Observed episode precision | 77.8% |
+| Exact 95% interval | 40.0% to 97.2% |
 
 | Episode | Start | End | Peak | Alert months | Raw runs merged | Outcome | Context | Matched recession starts |
 |---:|---|---|---|---:|---:|---|---|---|
@@ -74,23 +74,22 @@ Orange/Red runs separated by 6 or fewer non-alert months are one episode. An obs
 | 7 | 2000-08-31 | 2003-09-30 | RED | 37 | 2 | TRUE_POSITIVE | MATCHED_RECESSION | 2001-04-30 |
 | 8 | 2007-08-31 | 2010-09-30 | RED | 34 | 4 | TRUE_POSITIVE | MATCHED_RECESSION | 2008-01-31 |
 | 9 | 2019-12-31 | 2021-02-28 | RED | 10 | 3 | TRUE_POSITIVE | MATCHED_RECESSION | 2020-03-31 |
-| 10 | 2024-03-31 | 2024-03-31 | ORANGE | 1 | 1 | FALSE_POSITIVE | UNMATCHED_STRESS | None |
-| 11 | 2025-06-30 | 2025-11-30 | ORANGE | 3 | 2 | RIGHT_CENSORED | OUTCOME_NOT_YET_OBSERVABLE | None |
+| 10 | 2025-06-30 | 2025-11-30 | ORANGE | 4 | 2 | RIGHT_CENSORED | OUTCOME_NOT_YET_OBSERVABLE | None |
 
 ## Transition diagnostics
 
-There were 28 raw entries into Orange/Red. Transitions are state-machine diagnostics, not independent forecast events.
+There were 27 raw entries into Orange/Red. Transitions are state-machine diagnostics, not independent forecast events.
 
-1970-01-31, 1970-09-30, 1974-01-31, 1974-06-30, 1974-08-31, 1979-04-30, 1979-08-31, 1980-02-29, 1981-02-28, 1981-09-30, 1986-04-30, 1986-06-30, 1989-04-30, 1989-07-31, 1990-08-31, 1991-12-31, 2000-08-31, 2000-10-31, 2007-08-31, 2007-12-31, 2010-05-31, 2010-08-31, 2019-12-31, 2020-03-31, 2021-02-28, 2024-03-31, 2025-06-30, 2025-10-31
+1970-01-31, 1970-09-30, 1974-01-31, 1974-06-30, 1974-08-31, 1979-04-30, 1979-08-31, 1980-02-29, 1981-02-28, 1981-09-30, 1986-04-30, 1986-06-30, 1989-04-30, 1989-07-31, 1990-08-31, 1991-12-31, 2000-08-31, 2000-10-31, 2007-08-31, 2007-12-31, 2010-05-31, 2010-08-31, 2019-12-31, 2020-03-31, 2021-02-28, 2025-06-30, 2025-09-30
 
 ## State occupancy
 
 | State | Months |
 |---|---:|
-| GREEN | 446 |
+| GREEN | 445 |
 | ORANGE | 90 |
 | RED | 71 |
-| YELLOW | 109 |
+| YELLOW | 110 |
 
 ## Material caveats
 

@@ -172,29 +172,12 @@
         }
       },
       {
-        "calendar_months": 1,
-        "context": "UNMATCHED_STRESS",
-        "end": "2024-03-31",
-        "episode": 10,
-        "matched_recession_starts": [],
-        "orange_or_red_months": 1,
-        "outcome": "FALSE_POSITIVE",
-        "peak_state": "ORANGE",
-        "raw_runs_merged": 1,
-        "start": "2024-03-31",
-        "start_layers": {
-          "activity": "ELEVATED",
-          "credit": "NORMAL",
-          "labor": "ELEVATED"
-        }
-      },
-      {
         "calendar_months": 6,
         "context": "OUTCOME_NOT_YET_OBSERVABLE",
         "end": "2025-11-30",
-        "episode": 11,
+        "episode": 10,
         "matched_recession_starts": [],
-        "orange_or_red_months": 3,
+        "orange_or_red_months": 4,
         "outcome": "RIGHT_CENSORED",
         "peak_state": "ORANGE",
         "raw_runs_merged": 2,
@@ -206,16 +189,16 @@
         }
       }
     ],
-    "false_positive_episodes": 3,
+    "false_positive_episodes": 2,
     "forecast_window_months": 18,
-    "observed_episode_precision": 0.7,
+    "observed_episode_precision": 0.7778,
     "observed_episode_precision_interval": {
       "confidence": 0.95,
-      "lower": 0.3475,
+      "lower": 0.3999,
       "method": "Clopper-Pearson exact",
       "successes": 7,
-      "trials": 10,
-      "upper": 0.9333
+      "trials": 9,
+      "upper": 0.9719
     },
     "right_censored_episodes": 1,
     "true_positive_episodes": 7
@@ -336,14 +319,14 @@
   },
   "ruleset_version": "0.1.1-provisional",
   "state_months": {
-    "GREEN": 446,
+    "GREEN": 445,
     "ORANGE": 90,
     "RED": 71,
-    "YELLOW": 109
+    "YELLOW": 110
   },
   "transition_diagnostics": {
     "interpretation": "Transitions are state-machine diagnostics, not independent forecast events.",
-    "raw_orange_or_red_transition_count": 28,
+    "raw_orange_or_red_transition_count": 27,
     "raw_orange_or_red_transition_dates": [
       "1970-01-31",
       "1970-09-30",
@@ -370,9 +353,8 @@
       "2019-12-31",
       "2020-03-31",
       "2021-02-28",
-      "2024-03-31",
       "2025-06-30",
-      "2025-10-31"
+      "2025-09-30"
     ]
   },
   "validation_type": "Current-vintage pseudo-real-time backtest"
