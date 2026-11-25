@@ -86,10 +86,10 @@ There were 27 raw entries into Orange/Red. Transitions are state-machine diagnos
 
 | State | Months |
 |---|---:|
-| GREEN | 445 |
+| GREEN | 444 |
 | ORANGE | 90 |
 | RED | 71 |
-| YELLOW | 110 |
+| YELLOW | 111 |
 
 ## Material caveats
 
