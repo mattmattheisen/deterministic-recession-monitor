@@ -1,6 +1,6 @@
 # Recession Monitor Data-Quality Report
 
-**As of:** 2026-11-25  
+**As of:** 2026-11-26  
 **Registry:** `0.1.1`  
 
 ## Source coverage and freshness
